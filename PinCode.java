@@ -8,9 +8,7 @@ public class PinCode {
         String expression = "^[0-9]{6,6}$";
         System.out.print("Please Enter PIN code: ");
         String pin = scan.next();
-        if(Pattern.matches(expression, pin))
-            System.out.println("PIN Code Succesfully Valid");
-        else
-            System.out.println("PIN Code is InValid");
-    }
+        String result = (Pattern.matches(expression, pin)) ? "Succesfully Valid" : "is InValid";
+	System.out.println("PIN Code" + result + "");
+	}
 }
