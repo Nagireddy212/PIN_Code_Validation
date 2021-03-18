@@ -9,6 +9,6 @@ public class PinCode {
         System.out.print("Please Enter PIN code: ");
         String pin = scan.next();
         String result = (Pattern.matches(expression, pin)) ? "Succesfully Valid" : "is InValid";
-	System.out.println("PIN Code" + result + "");
+	System.out.println("PIN Code" + result + " ");
 	}
 }
